@@ -1,4 +1,4 @@
-name: szmetro 
+name: test
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://www.apple.com.cn/newsroom/" -e -d 2 -t 30
+        python sitecopy.py -u "https://www.apple.com.cn/sitemap/" -e -d 2 -t 100
   
     # 打包文件  
     - name: Zip files  

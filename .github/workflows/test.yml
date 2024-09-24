@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -s "site.txt" 
+        python sitecopy.py -u "http://apple.com.cn" -e -d 2 -t 30
   
     # 打包文件  
     - name: Zip files  
